@@ -41,7 +41,7 @@
       async function loadPosts() {
         try {
           // Fetch meta.json to get list of posts
-          const metaResponse = await fetch("posts/meta.json");
+          const metaResponse = await fetch("/posts/meta.json");
           const meta = await metaResponse.json();
 
           const postsContainer = document.getElementById("posts");
@@ -49,7 +49,7 @@
           // Load each post file
           for (const postFile of meta.posts) {
             try {
-              const postResponse = await fetch(`posts/${postFile}`);
+              const postResponse = await fetch(`/posts/${postFile}`);
               const post = await postResponse.json();
 
               const postElement = document.createElement("div");
