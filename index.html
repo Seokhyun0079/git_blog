@@ -40,22 +40,32 @@
       // Function to fetch and display posts
       async function loadPosts() {
         try {
-          const response = await fetch("/api/posts");
-          const data = await response.json();
+          // Fetch meta.json to get list of posts
+          const metaResponse = await fetch("posts/meta.json");
+          const meta = await metaResponse.json();
+
           const postsContainer = document.getElementById("posts");
 
-          data.data.forEach((post) => {
-            const postElement = document.createElement("div");
-            postElement.className = "post";
-            postElement.innerHTML = `
-                        <h2 class="post-title">${post.title}</h2>
-                        <div class="post-date">${new Date(
-                          post.createdAt
-                        ).toLocaleDateString()}</div>
-                        <div class="post-content">${post.content}</div>
-                    `;
-            postsContainer.appendChild(postElement);
-          });
+          // Load each post file
+          for (const postFile of meta.posts) {
+            try {
+              const postResponse = await fetch(`posts/${postFile}`);
+              const post = await postResponse.json();
+
+              const postElement = document.createElement("div");
+              postElement.className = "post";
+              postElement.innerHTML = `
+                <h2 class="post-title">${post.title}</h2>
+                <div class="post-date">${new Date(
+                  post.createdAt
+                ).toLocaleDateString()}</div>
+                <div class="post-content">${post.content}</div>
+              `;
+              postsContainer.appendChild(postElement);
+            } catch (error) {
+              console.error(`Error loading post ${postFile}:`, error);
+            }
+          }
         } catch (error) {
           console.error("Error loading posts:", error);
         }
