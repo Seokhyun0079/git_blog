@@ -65,7 +65,7 @@
           // Load each post file
           for (const postFile of meta.posts) {
             try {
-              const postResponse = await fetch(`/posts/${postFile}`);
+              const postResponse = await fetch(`./posts/${postFile}`);
               const post = await postResponse.json();
 
               const postElement = document.createElement("a");
