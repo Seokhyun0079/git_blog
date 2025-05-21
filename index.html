@@ -57,7 +57,7 @@
       async function loadPosts() {
         try {
           // Fetch meta.json to get list of posts
-          const metaResponse = await fetch("/posts/meta.json");
+          const metaResponse = await fetch("./posts/meta.json");
           const meta = await metaResponse.json();
 
           const postsContainer = document.getElementById("posts");
