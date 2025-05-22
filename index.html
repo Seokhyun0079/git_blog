@@ -137,6 +137,7 @@
 
               let imageHtml = "";
               if (post.files && post.files.length > 0) {
+                console.log(post.files);
                 imageHtml = `
                   <div class="post-image-container">
                     <img src="/images/${post.files[0].name}" alt="Preview" class="post-preview-image">
