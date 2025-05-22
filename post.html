@@ -166,7 +166,7 @@
 
             post.files.forEach((file) => {
               const img = document.createElement("img");
-              img.src = `/images/${file.name}`;
+              img.src = `./images/${file.name}`;
               img.alt = file.name;
               img.className = "gallery-image";
               gallery.appendChild(img);
