@@ -1,0 +1,13 @@
+{
+  "id": "8bef46ee-c747-4891-8142-8622f8b7706c",
+  "title": "test1",
+  "content": "test2",
+  "createdAt": "2025-05-27T22:55:49.192Z",
+  "files": [
+    {
+      "id": "0556fb69-c93d-43c8-98db-19678d4a895b",
+      "name": "0556fb69-c93d-43c8-98db-19678d4a895b.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/images/0556fb69-c93d-43c8-98db-19678d4a895b.png"
+    }
+  ]
+}
