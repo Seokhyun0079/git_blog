@@ -3,6 +3,12 @@
   "title": "4",
   "content": "5",
   "createdAt": "2025-05-27T23:04:57.013Z",
-  "files": [],
-  "updatedAt": "2025-05-30T16:29:38.811Z"
+  "files": [
+    {
+      "id": "27de7a79-0e79-4b1c-b578-6d264ca7b1ba",
+      "name": "27de7a79-0e79-4b1c-b578-6d264ca7b1ba.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/images/27de7a79-0e79-4b1c-b578-6d264ca7b1ba.png"
+    }
+  ],
+  "updatedAt": "2025-05-30T16:30:21.423Z"
 }
