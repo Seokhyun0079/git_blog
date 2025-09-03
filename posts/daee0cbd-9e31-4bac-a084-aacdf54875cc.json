@@ -1,0 +1,16 @@
+{
+  "id": "daee0cbd-9e31-4bac-a084-aacdf54875cc",
+  "title": "今日もテストをしております",
+  "content": "\r\n<img src=\"672aa3c2-fa77-421c-a0b0-c588b7175d97\"/>\r\n",
+  "createdAt": "2025-09-03T13:11:20.282Z",
+  "files": [],
+  "contentFiles": [
+    {
+      "id": "672aa3c2-fa77-421c-a0b0-c588b7175d97",
+      "name": "672aa3c2-fa77-421c-a0b0-c588b7175d97.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/672aa3c2-fa77-421c-a0b0-c588b7175d97.png",
+      "uuid": "672aa3c2-fa77-421c-a0b0-c588b7175d97",
+      "type": "image"
+    }
+  ]
+}
