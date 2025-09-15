@@ -147,7 +147,7 @@
             throw new Error("Post ID not found");
           }
 
-          const response = await fetch(`./posts/${postId}`);
+          const response = await fetch(`./posts/${postId}?time=${Date.now()}`);
           const post = await response.json();
 
           document.title = post.title;
