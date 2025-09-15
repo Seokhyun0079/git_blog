@@ -1,9 +1,9 @@
 {
   "id": "2a4dbe73-a7ce-4762-bca4-28566303334d",
   "title": "Yotubeを入れられるような仕組みを作ってます",
-  "content": "アップロードしてみましょう\r\n<yotube src=\"https://www.youtube.com/embed/_if-2vhQmi8\">\r\nこれが出来たらブログとしてもっと使えものになると思います\r\nさてさてテストです！\r\n<yotube src=\"https://www.youtube.com/embed/d7-qkgvVIcc\">",
+  "content": "アップロードしてみましょう\r\n<yotube src=\"https://www.youtube.com/embed/_if-2vhQmi8\">\r\nこれが出来たらブログとしてもっと使えものになると思います\r\nさてさてテストです！\r\n<yotube src=\"https://www.youtube.com/embed/d7-qkgvVIcc\">\r\nなんとか出来たようですね。ただまだバグが残ってると思いますので、あれこれ動確しないとですね",
   "createdAt": "2025-09-14T04:45:47.672Z",
   "files": [],
   "contentFiles": [],
-  "updatedAt": "2025-09-15T07:26:00.354Z"
+  "updatedAt": "2025-09-15T07:28:02.584Z"
 }
