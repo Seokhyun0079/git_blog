@@ -1,9 +1,9 @@
 {
   "id": "2a4dbe73-a7ce-4762-bca4-28566303334d",
   "title": "Yotubeを入れられるような仕組みを作ってます",
-  "content": "アップロードしてみましょう\r\n\r\n<yotube src=\"https://www.youtube.com/embed/_if-2vhQmi8\" frameborder=\"0\" allowfullscreen/>\r\n\r\n\r\n\r\nこれが出来たらブログとしてもっと使えものになると思います\r\n\r\n<img src=\"2516fd2f-d040-4e81-8b8f-7014ef195b6c\"/>\r\n\r\nさてさてテストです！\r\n\r\n<yotube src=\"https://www.youtube.com/embed/d7-qkgvVIcc\" frameborder=\"0\" allowfullscreen/>\r\n",
+  "content": "アップロードしてみましょう\r\n\r\n<yotube src=\"https://www.youtube.com/embed/_if-2vhQmi8\" frameborder=\"0\" allowfullscreen/>\r\n\r\n\r\n\r\nこれが出来たらブログとしてもっと使えものになると思います\r\n\r\n<img src=\"2516fd2f-d040-4e81-8b8f-7014ef195b6c\"/>\r\n\r\nさてさてテストです！\r\n\r\n<yotube src=\"https://www.youtube.com/embed/d7-qkgvVIcc\" frameborder=\"0\" allowfullscreen >\r\n　　",
   "createdAt": "2025-09-14T04:45:47.672Z",
   "files": [],
   "contentFiles": [],
-  "updatedAt": "2025-09-14T15:34:53.246Z"
+  "updatedAt": "2025-09-15T05:52:00.541Z"
 }
