@@ -223,7 +223,7 @@
             (match, youtubeVideoUrl) => {
               console.log("youtubeVideoUrl", youtubeVideoUrl);
               console.log("match", match);
-              return `<iframe src="${youtubeVideoUrl}" ></iframe>`;
+              return `<iframe src="${youtubeVideoUrl}" allowfullscreen title="${youtubeVideoUrl}" width="100%"></iframe>`;
             }
           );
 
