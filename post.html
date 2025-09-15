@@ -219,7 +219,7 @@
             );
           }
           processedContent = processedContent.replace(
-            /<yotube src="([^"]+)"/g,
+            /<yotube src="([^"]+)"[^>]*>/g,
             (match, youtubeVideoUrl) => {
               console.log("youtubeVideoUrl", youtubeVideoUrl);
               console.log("match", match);
