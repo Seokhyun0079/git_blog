@@ -184,6 +184,7 @@
           // UUID 태그를 실제 미디어로 변환
           let processedContent = post.content;
 
+          console.log("processedContent", processedContent);
           // contentFiles가 있으면 UUID를 실제 파일 경로로 매핑
           if (post.contentFiles && post.contentFiles.length > 0) {
             const uuidToFileMap = {};
@@ -225,9 +226,9 @@
               return `<iframe src="${youtubeVideoUrl}" `;
             }
           );
-          console.log("processedContent", processedContent);
 
           content.innerHTML = processedContent.replace(/\n/g, "<br>");
+          console.log("processedContent", processedContent);
           postContent.appendChild(content);
         } catch (error) {
           console.error("Error loading post:", error);
