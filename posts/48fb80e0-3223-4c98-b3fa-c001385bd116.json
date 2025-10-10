@@ -1,9 +1,17 @@
 {
   "id": "48fb80e0-3223-4c98-b3fa-c001385bd116",
   "title": "ちょっとバグや直しておきたい所",
-  "content": "１．ファイルをアップロードしている投稿を開いて、編集した後にSAVEすると、最初に投稿時にアップロードしたファイルが削除される\r\n２．Editorの方でListで見る時に、文字列だけで並ぶのではなく、実際の投稿みたいに並ばせる\r\n３．ページング機能",
+  "content": "１．ファイルをアップロードしている投稿を開いて、編集した後にSAVEすると、最初に投稿時にアップロードしたファイルが削除される\r\n２．Editorの方でListで見る時に、文字列だけで並ぶのではなく、実際の投稿みたいに並ばせる\r\n３．ページング機能\r\n\r\n<img src=\"f40a50fb-6cf2-44c1-8370-3ed3f4f698e5\"/>\r\n",
   "createdAt": "2025-09-15T07:36:08.784Z",
   "files": [],
-  "contentFiles": [],
-  "updatedAt": "2025-09-23T13:46:27.665Z"
+  "contentFiles": [
+    {
+      "id": "f40a50fb-6cf2-44c1-8370-3ed3f4f698e5",
+      "name": "f40a50fb-6cf2-44c1-8370-3ed3f4f698e5.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/f40a50fb-6cf2-44c1-8370-3ed3f4f698e5.png",
+      "uuid": "f40a50fb-6cf2-44c1-8370-3ed3f4f698e5",
+      "type": "image"
+    }
+  ],
+  "updatedAt": "2025-10-10T06:51:01.261Z"
 }
