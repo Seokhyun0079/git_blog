@@ -1,9 +1,17 @@
 {
   "id": "6f145d57-ef39-4e06-948a-12b7cdc72d03",
-  "title": "いつの間にか劣化してしまったという悲しい物語",
-  "content": "\r\n<img src=\"https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/c8811eb0-bfbe-4a72-941a-ccd22e1959dd.png\"/>\r\nバグってたのなんだったけ",
+  "title": "一回登録してそのあとに再度編集して登録すると",
+  "content": "最初に添付してたファイルが消えてしまうという悲しみ\r\n<img src=\"e18483e2-a2d9-4fac-a8c5-4a4f64ec6048\"/>\r\n",
   "createdAt": "2025-10-10T07:36:35.931Z",
   "files": [],
-  "contentFiles": [],
-  "updatedAt": "2025-10-16T13:36:00.035Z"
+  "contentFiles": [
+    {
+      "id": "e18483e2-a2d9-4fac-a8c5-4a4f64ec6048",
+      "name": "e18483e2-a2d9-4fac-a8c5-4a4f64ec6048.jpg",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/e18483e2-a2d9-4fac-a8c5-4a4f64ec6048.jpg",
+      "uuid": "e18483e2-a2d9-4fac-a8c5-4a4f64ec6048",
+      "type": "image"
+    }
+  ],
+  "updatedAt": "2025-10-16T13:39:08.115Z"
 }
