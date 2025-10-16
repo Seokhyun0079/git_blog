@@ -1,17 +1,17 @@
 {
   "id": "6f145d57-ef39-4e06-948a-12b7cdc72d03",
   "title": "一回登録してそのあとに再度編集して登録すると",
-  "content": "最初に添付してたファイルが消えてしまうという悲しみ\r\n<img src=\"0b4fabd9-488a-45dd-9fe5-975cec2ce9c0\"/>\r\n",
+  "content": "最初に添付してたファイルが消えてしまうという悲しみ\r\n<img src=\"7f5c17ca-4de5-4a33-834a-c5468e9850dd\"/>\r\n",
   "createdAt": "2025-10-10T07:36:35.931Z",
   "files": [],
   "contentFiles": [
     {
-      "id": "0b4fabd9-488a-45dd-9fe5-975cec2ce9c0",
-      "name": "0b4fabd9-488a-45dd-9fe5-975cec2ce9c0.png",
-      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/0b4fabd9-488a-45dd-9fe5-975cec2ce9c0.png",
-      "uuid": "0b4fabd9-488a-45dd-9fe5-975cec2ce9c0",
+      "id": "7f5c17ca-4de5-4a33-834a-c5468e9850dd",
+      "name": "7f5c17ca-4de5-4a33-834a-c5468e9850dd.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/7f5c17ca-4de5-4a33-834a-c5468e9850dd.png",
+      "uuid": "7f5c17ca-4de5-4a33-834a-c5468e9850dd",
       "type": "image"
     }
   ],
-  "updatedAt": "2025-10-16T13:51:55.492Z"
+  "updatedAt": "2025-10-16T13:52:16.859Z"
 }
