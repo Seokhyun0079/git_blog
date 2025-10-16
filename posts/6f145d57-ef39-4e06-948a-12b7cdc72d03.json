@@ -1,16 +1,9 @@
 {
   "id": "6f145d57-ef39-4e06-948a-12b7cdc72d03",
   "title": "いつの間にか劣化してしまったという悲しい物語",
-  "content": "\r\n<img src=\"https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/c8811eb0-bfbe-4a72-941a-ccd22e1959dd.png\"/>\r\nやり直さなければいけないのだ",
+  "content": "\r\n<img src=\"https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/c8811eb0-bfbe-4a72-941a-ccd22e1959dd.png\"/>\r\nバグってたのなんだったけ",
   "createdAt": "2025-10-10T07:36:35.931Z",
   "files": [],
-  "contentFiles": [
-    {
-      "id": "c8811eb0-bfbe-4a72-941a-ccd22e1959dd",
-      "name": "c8811eb0-bfbe-4a72-941a-ccd22e1959dd.png",
-      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/c8811eb0-bfbe-4a72-941a-ccd22e1959dd.png",
-      "uuid": "c8811eb0-bfbe-4a72-941a-ccd22e1959dd",
-      "type": "image"
-    }
-  ]
+  "contentFiles": [],
+  "updatedAt": "2025-10-16T13:36:00.035Z"
 }
