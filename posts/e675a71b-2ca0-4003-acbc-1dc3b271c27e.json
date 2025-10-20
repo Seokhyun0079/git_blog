@@ -1,0 +1,16 @@
+{
+  "id": "e675a71b-2ca0-4003-acbc-1dc3b271c27e",
+  "title": "検証結果",
+  "content": "多分、更新のAPIに問題がありそう\r\n\r\n\r\n<img src=\"https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/cb163c83-19aa-4ea5-adb8-a53b20afef74.png\"/>\r\n\r\nというか、俺が考えてたロジックと違うロジックになってる気が？",
+  "createdAt": "2025-10-20T13:01:45.248Z",
+  "files": [],
+  "contentFiles": [
+    {
+      "id": "cb163c83-19aa-4ea5-adb8-a53b20afef74",
+      "name": "cb163c83-19aa-4ea5-adb8-a53b20afef74.png",
+      "url": "https://raw.githubusercontent.com/Seokhyun0079/git_blog/main/content/cb163c83-19aa-4ea5-adb8-a53b20afef74.png",
+      "uuid": "cb163c83-19aa-4ea5-adb8-a53b20afef74",
+      "type": "image"
+    }
+  ]
+}
