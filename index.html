@@ -77,6 +77,12 @@
         object-fit: cover;
         transition: transform 0.3s ease;
       }
+      .preivew-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
 
       .post:hover .post-preview-image {
         transform: scale(1.05);
@@ -177,19 +183,7 @@
               }
 
               // Add class to any <img> tags inside post.content
-              let processedContent = post.content;
-              try {
-                const tempContentContainer = document.createElement("div");
-                tempContentContainer.innerHTML = processedContent;
-                const contentImages =
-                  tempContentContainer.querySelectorAll("img");
-                contentImages.forEach((img) =>
-                  img.classList.add("preivew-image")
-                );
-                processedContent = tempContentContainer.innerHTML;
-              } catch (e) {
-                // No-op: if parsing fails, fallback to original content
-              }
+              let processedContent = addClassToImages(post.content);
 
               postElement.innerHTML = `
                 ${imageHtml}
@@ -218,6 +212,20 @@
         const modalImg = document.getElementById("modalImage");
         modal.style.display = "block";
         modalImg.src = imageSrc;
+      }
+
+      function addClassToImages(processedContent) {
+        try {
+          const tempContentContainer = document.createElement("div");
+          tempContentContainer.innerHTML = processedContent;
+          const contentImages = tempContentContainer.querySelectorAll("img");
+          contentImages.forEach((img) => img.classList.add("preivew-image"));
+          processedContent = tempContentContainer.innerHTML;
+        } catch (e) {
+          // No-op: if parsing fails, fallback to original content
+        } finally {
+          return processedContent;
+        }
       }
 
       // Close modal
