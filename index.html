@@ -176,6 +176,21 @@
                 `;
               }
 
+              // Add class to any <img> tags inside post.content
+              let processedContent = post.content;
+              try {
+                const tempContentContainer = document.createElement("div");
+                tempContentContainer.innerHTML = processedContent;
+                const contentImages =
+                  tempContentContainer.querySelectorAll("img");
+                contentImages.forEach((img) =>
+                  img.classList.add("preivew-image")
+                );
+                processedContent = tempContentContainer.innerHTML;
+              } catch (e) {
+                // No-op: if parsing fails, fallback to original content
+              }
+
               postElement.innerHTML = `
                 ${imageHtml}
                 <div class="post-content">
@@ -183,7 +198,7 @@
                   <div class="post-date">${new Date(
                     post.createdAt
                   ).toLocaleDateString()}</div>
-                  <p class="post-excerpt">${post.content}</p>
+                  <p class="post-excerpt">${processedContent}</p>
                 </div>
               `;
               postsContainer.appendChild(postElement);
