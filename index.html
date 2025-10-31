@@ -157,6 +157,7 @@
     <div id="imageModal" class="modal">
       <img class="modal-content" id="modalImage" />
     </div>
+    <script src="./utills.js"></script>
     <script>
       // Function to fetch and display posts
       async function loadPosts() {
@@ -213,20 +214,6 @@
         const modalImg = document.getElementById("modalImage");
         modal.style.display = "block";
         modalImg.src = imageSrc;
-      }
-
-      function addClassToImages(processedContent) {
-        try {
-          const tempContentContainer = document.createElement("div");
-          tempContentContainer.innerHTML = processedContent;
-          const contentImages = tempContentContainer.querySelectorAll("img");
-          contentImages.forEach((img) => img.classList.add("preivew-image"));
-          processedContent = tempContentContainer.innerHTML;
-        } catch (e) {
-          // No-op: if parsing fails, fallback to original content
-        } finally {
-          return processedContent;
-        }
       }
 
       // Close modal
