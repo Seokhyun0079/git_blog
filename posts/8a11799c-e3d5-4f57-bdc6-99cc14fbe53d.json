@@ -3,6 +3,18 @@
   "title": "リファクター中です",
   "content": "ちゃんと動いてくれると嬉しいんですが",
   "createdAt": "2025-11-11T03:30:45.800Z",
-  "files": [],
-  "contentFiles": []
+  "files": [
+    {
+      "id": "dce4cfc2-c497-4966-ad50-e0ee860c1af5",
+      "name": "dce4cfc2-c497-4966-ad50-e0ee860c1af5.jpeg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/dce4cfc2-c497-4966-ad50-e0ee860c1af5.jpeg"
+    },
+    {
+      "id": "6ab230c8-78a5-4274-b634-c40418f574cb",
+      "name": "6ab230c8-78a5-4274-b634-c40418f574cb.jpeg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/6ab230c8-78a5-4274-b634-c40418f574cb.jpeg"
+    }
+  ],
+  "contentFiles": [],
+  "updatedAt": "2025-11-11T03:31:11.707Z"
 }
