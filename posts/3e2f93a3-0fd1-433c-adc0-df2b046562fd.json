@@ -3,7 +3,18 @@
   "title": "test",
   "content": "test",
   "createdAt": "2025-11-11T14:13:52.893Z",
-  "files": [],
+  "files": [
+    {
+      "id": "ae8fda04-c8b4-45cd-8020-02e3e6a38f9e",
+      "name": "ae8fda04-c8b4-45cd-8020-02e3e6a38f9e.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/ae8fda04-c8b4-45cd-8020-02e3e6a38f9e.jpg"
+    },
+    {
+      "id": "a21f19b4-b5a0-4a86-8b73-d99f11fef2f2",
+      "name": "a21f19b4-b5a0-4a86-8b73-d99f11fef2f2.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/a21f19b4-b5a0-4a86-8b73-d99f11fef2f2.jpg"
+    }
+  ],
   "contentFiles": [],
-  "updatedAt": "2025-11-11T14:30:06.576Z"
+  "updatedAt": "2025-11-11T14:31:53.241Z"
 }
