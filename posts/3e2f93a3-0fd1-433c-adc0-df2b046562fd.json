@@ -3,7 +3,13 @@
   "title": "test",
   "content": "test",
   "createdAt": "2025-11-11T14:13:52.893Z",
-  "files": [],
+  "files": [
+    {
+      "id": "b3b3944b-f134-497b-923b-29f74eec8d4e",
+      "name": "b3b3944b-f134-497b-923b-29f74eec8d4e.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/b3b3944b-f134-497b-923b-29f74eec8d4e.jpg"
+    }
+  ],
   "contentFiles": [],
-  "updatedAt": "2025-11-11T14:21:32.274Z"
+  "updatedAt": "2025-11-11T14:23:12.966Z"
 }
