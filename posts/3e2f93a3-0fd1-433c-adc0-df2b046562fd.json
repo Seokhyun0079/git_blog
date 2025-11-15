@@ -1,15 +1,24 @@
 {
   "id": "3e2f93a3-0fd1-433c-adc0-df2b046562fd",
   "title": "test",
-  "content": "test",
+  "content": "test\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/21657845-683e-4d82-b003-e179adca0738.jpg\"/>\r\n",
   "createdAt": "2025-11-11T14:13:52.893Z",
   "files": [
     {
-      "id": "7384c77f-fde9-4974-9087-8aa8fbefd3f7",
-      "name": "7384c77f-fde9-4974-9087-8aa8fbefd3f7.jpg",
-      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/7384c77f-fde9-4974-9087-8aa8fbefd3f7.jpg"
+      "id": "63888571-6fdf-49bd-96df-6bf8ad2fcefc",
+      "name": "63888571-6fdf-49bd-96df-6bf8ad2fcefc.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/63888571-6fdf-49bd-96df-6bf8ad2fcefc.jpg"
     }
   ],
-  "contentFiles": [],
-  "updatedAt": "2025-11-12T14:03:25.636Z"
+  "contentFiles": [
+    {
+      "id": "21657845-683e-4d82-b003-e179adca0738",
+      "name": "21657845-683e-4d82-b003-e179adca0738.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/21657845-683e-4d82-b003-e179adca0738.jpg",
+      "uuid": "21657845-683e-4d82-b003-e179adca0738",
+      "type": "image",
+      "status": "DRAFT"
+    }
+  ],
+  "updatedAt": "2025-11-15T07:14:27.847Z"
 }
