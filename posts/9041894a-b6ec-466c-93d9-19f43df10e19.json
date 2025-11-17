@@ -3,13 +3,7 @@
   "title": "もう一回テスト",
   "content": "\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/9ecf5332-a0b0-4e7e-94f4-286536682c96.jpg\"/>\r\n",
   "createdAt": "2025-11-15T08:23:04.632Z",
-  "files": [
-    {
-      "id": "e837856a-f8bc-47e7-9f7b-f44523df8320",
-      "name": "e837856a-f8bc-47e7-9f7b-f44523df8320.jpg",
-      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/e837856a-f8bc-47e7-9f7b-f44523df8320.jpg"
-    }
-  ],
+  "files": [],
   "contentFiles": [
     {
       "id": "9ecf5332-a0b0-4e7e-94f4-286536682c96",
@@ -18,5 +12,6 @@
       "uuid": "9ecf5332-a0b0-4e7e-94f4-286536682c96",
       "type": "image"
     }
-  ]
+  ],
+  "updatedAt": "2025-11-17T13:34:19.572Z"
 }
