@@ -3,7 +3,13 @@
   "title": "테스틍",
   "content": "테에ㅔㅔ스트",
   "createdAt": "2025-11-22T12:28:12.058Z",
-  "files": [],
+  "files": [
+    {
+      "id": "5ce0da8b-104c-4d32-ac25-1154060e091c",
+      "name": "5ce0da8b-104c-4d32-ac25-1154060e091c.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/5ce0da8b-104c-4d32-ac25-1154060e091c.jpg"
+    }
+  ],
   "contentFiles": [],
-  "updatedAt": "2025-11-22T13:30:45.412Z"
+  "updatedAt": "2025-11-22T13:37:39.911Z"
 }
