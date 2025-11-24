@@ -3,13 +3,7 @@
   "title": "ㅅㄷㄴㅅ",
   "content": "ㅅㄷㄴㅅ\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/b9ad66ef-414b-40da-8bc1-67c73c6d2489.jpg\"/>\r\n",
   "createdAt": "2025-11-24T00:59:15.524Z",
-  "files": [
-    {
-      "id": "29506c6f-3d4e-4ef4-b6a9-1ccc9e0a4133",
-      "name": "29506c6f-3d4e-4ef4-b6a9-1ccc9e0a4133.jpg",
-      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/29506c6f-3d4e-4ef4-b6a9-1ccc9e0a4133.jpg"
-    }
-  ],
+  "files": [],
   "contentFiles": [
     {
       "id": "731536d1-9eea-471a-9945-4dba24d45ab5",
@@ -17,5 +11,6 @@
       "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/b9ad66ef-414b-40da-8bc1-67c73c6d2489.jpg",
       "type": "image"
     }
-  ]
+  ],
+  "updatedAt": "2025-11-24T01:43:31.677Z"
 }
