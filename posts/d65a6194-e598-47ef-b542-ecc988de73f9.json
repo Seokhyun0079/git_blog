@@ -6,20 +6,6 @@
   "files": [],
   "contentFiles": [
     {
-      "id": "82ef8c09-5e23-425d-9e7e-e43f7f05d4d5",
-      "name": "82ef8c09-5e23-425d-9e7e-e43f7f05d4d5.jpg",
-      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/82ef8c09-5e23-425d-9e7e-e43f7f05d4d5.jpg",
-      "uuid": "82ef8c09-5e23-425d-9e7e-e43f7f05d4d5",
-      "type": "image"
-    },
-    {
-      "id": "cdee5928-b7dc-44e1-97bd-591ee7693b43",
-      "name": "cdee5928-b7dc-44e1-97bd-591ee7693b43.jpg",
-      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/cdee5928-b7dc-44e1-97bd-591ee7693b43.jpg",
-      "uuid": "cdee5928-b7dc-44e1-97bd-591ee7693b43",
-      "type": "image"
-    },
-    {
       "id": "dfdd36a8-74ee-4bbd-906b-7f01b31fb67d",
       "name": "dfdd36a8-74ee-4bbd-906b-7f01b31fb67d.jpg",
       "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/dfdd36a8-74ee-4bbd-906b-7f01b31fb67d.jpg",
@@ -34,5 +20,5 @@
       "type": "image"
     }
   ],
-  "updatedAt": "2025-11-11T03:55:08.814Z"
+  "updatedAt": "2025-11-25T12:37:10.470Z"
 }
