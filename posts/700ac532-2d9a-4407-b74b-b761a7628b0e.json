@@ -1,7 +1,7 @@
 {
   "id": "700ac532-2d9a-4407-b74b-b761a7628b0e",
   "title": "登録テスト",
-  "content": "登録しよう\r\n\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg\"/>\r\n",
+  "content": "登録しよう\r\n\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg\"/>\r\n\r\n更新しましょう\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/KakaoTalk_Photo_2025-11-09-23-19-35.jpeg\"/>\r\n",
   "createdAt": "2025-11-29T10:49:22.490Z",
   "files": [
     {
@@ -17,7 +17,14 @@
       "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg",
       "type": "image",
       "status": "DRAFT"
+    },
+    {
+      "id": "8f86dfb7-e945-4b00-9275-b36de3185baf",
+      "name": "KakaoTalk_Photo_2025-11-09-23-19-35.jpeg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/KakaoTalk_Photo_2025-11-09-23-19-35.jpeg",
+      "type": "image",
+      "status": "DRAFT"
     }
   ],
-  "updatedAt": "2025-11-29T12:21:19.936Z"
+  "updatedAt": "2025-11-29T12:22:31.083Z"
 }
