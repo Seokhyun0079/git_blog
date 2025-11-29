@@ -1,7 +1,7 @@
 {
   "id": "700ac532-2d9a-4407-b74b-b761a7628b0e",
   "title": "登録テスト",
-  "content": "登録しよう\r\n<img src=\"6be1bf9c-80ea-433d-a7e2-b83f055cee08\"/>\r\n",
+  "content": "登録しよう\r\n\r\n<img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg\"/>\r\n",
   "createdAt": "2025-11-29T10:49:22.490Z",
   "files": [
     {
@@ -10,5 +10,14 @@
       "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/images/0ea1ea00-0242-42b3-a31b-7d87b702d28e.jpeg"
     }
   ],
-  "contentFiles": []
+  "contentFiles": [
+    {
+      "id": "cf4ef50a-ddd0-4059-a9e6-1b62ee408b37",
+      "name": "10360.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg",
+      "type": "image",
+      "status": "DRAFT"
+    }
+  ],
+  "updatedAt": "2025-11-29T12:21:19.936Z"
 }
