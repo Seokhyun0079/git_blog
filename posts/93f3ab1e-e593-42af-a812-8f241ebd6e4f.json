@@ -1,0 +1,15 @@
+{
+  "id": "93f3ab1e-e593-42af-a812-8f241ebd6e4f",
+  "title": "二回めのテストですわ！",
+  "content": "<p>te</p><p>fdfd</p><img src=\"blob:http://localhost:3000/3329b059-9d8c-46b0-a7a2-1a0b9e8e7f16\" data-uuid=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/40c0b51e-d504-42c4-b018-ad67398bfad6.png\" style=\"max-width: 100%; height: auto; display: block; margin: 1rem 0px;\"><p></p>",
+  "createdAt": "2026-01-12T08:33:15.261Z",
+  "files": [],
+  "contentFiles": [
+    {
+      "id": "40c0b51e-d504-42c4-b018-ad67398bfad6",
+      "name": "40c0b51e-d504-42c4-b018-ad67398bfad6.png",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/40c0b51e-d504-42c4-b018-ad67398bfad6.png",
+      "type": "image"
+    }
+  ]
+}
