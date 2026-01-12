@@ -1,0 +1,21 @@
+{
+  "id": "688a96f8-dc53-4614-8cbc-86d69ba14310",
+  "title": "ㅇㄴ",
+  "content": "<img src=\"blob:http://localhost:3000/5633afb8-6e48-4457-a729-c89f41e2ac69\" data-uuid=\"blob:http://localhost:3000/5633afb8-6e48-4457-a729-c89f41e2ac69\" style=\"max-width: 100%; height: auto; display: block; margin: 1rem 0px;\"><img src=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg\" data-uuid=\"https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg\" style=\"max-width: 100%; height: auto; display: block; margin: 1rem 0px;\"><p>함 겸사겸사 테스트 해보지 뭐</p>",
+  "createdAt": "2026-01-12T12:23:57.585Z",
+  "files": [],
+  "contentFiles": [
+    {
+      "id": "191b5115-c06f-4ec4-afb9-7ccf300ef621",
+      "name": "10360.jpg",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/10360.jpg",
+      "type": "image"
+    },
+    {
+      "id": "2b8469fc-b6fd-4768-9004-853822468eb1",
+      "name": "2b8469fc-b6fd-4768-9004-853822468eb1.png",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/2b8469fc-b6fd-4768-9004-853822468eb1.png",
+      "type": "image"
+    }
+  ]
+}
