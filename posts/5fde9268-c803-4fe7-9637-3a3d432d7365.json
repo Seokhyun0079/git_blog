@@ -1,0 +1,15 @@
+{
+  "id": "5fde9268-c803-4fe7-9637-3a3d432d7365",
+  "title": "てst",
+  "content": "<img src=\"blob:http://localhost:3000/565206f6-c609-4090-8984-6571f670a154\" data-uuid=\"blob:http://localhost:3000/565206f6-c609-4090-8984-6571f670a154\" style=\"max-width: 100%; height: auto; display: block; margin: 1rem 0px;\"><p>てst</p>",
+  "createdAt": "2026-01-12T12:28:29.045Z",
+  "files": [],
+  "contentFiles": [
+    {
+      "id": "095cc7a9-5435-4d15-b557-d564ac418a02",
+      "name": "095cc7a9-5435-4d15-b557-d564ac418a02.png",
+      "url": "https://raw.githubusercontent.com/seokhyun0079/git_blog/main/content/095cc7a9-5435-4d15-b557-d564ac418a02.png",
+      "type": "image"
+    }
+  ]
+}
