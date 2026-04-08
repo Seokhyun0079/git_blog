@@ -254,7 +254,26 @@
     </div>
     <script src="./utills.js"></script>
     <script>
-      const COMMENT_API_BASE = "".trim().replace(/\/$/, "");
+      (function resolveCommentApiBase() {
+        const PLACEHOLDER = "__COMMENT_API_BASE__";
+        let raw = PLACEHOLDER.trim().replace(/\/$/, "");
+        if (!raw || raw === PLACEHOLDER) {
+          raw = "";
+        }
+        if (raw) {
+          window.__COMMENT_API_BASE__ = raw;
+          return;
+        }
+        try {
+          const h = window.location.hostname;
+          if (h === "localhost" || h === "127.0.0.1") {
+            window.__COMMENT_API_BASE__ = "http://localhost:5000";
+            return;
+          }
+        } catch (e) {}
+        window.__COMMENT_API_BASE__ = "";
+      })();
+      const COMMENT_API_BASE = window.__COMMENT_API_BASE__ || "";
 
       function postIdForApi(raw) {
         if (!raw) return null;
@@ -290,7 +309,8 @@
         if (!url) {
           warn.hidden = false;
           warn.textContent =
-            "Set COMMENT_API_BASE in the editor server .env (public URL of this API), restart the server so templates sync, then rebuild or refresh the blog.";
+            "댓글 API 주소가 없습니다. 에디터 server/.env에 COMMENT_API_BASE=https://(배포한 API 주소) 를 넣고 서버를 재시작해 post.html이 블로그 리포에 다시 올라가게 하세요. GitHub Pages만 쓰는 경우 로컬 서버(localhost:5000)로는 브라우저에서 접근할 수 없습니다. " +
+            "COMMENT_API_BASE is missing. Add it to server/.env, restart the editor server (templates sync to the blog repo). For GitHub Pages you need a publicly reachable API URL.";
           if (form) form.querySelectorAll("input, textarea, button").forEach((el) => {
             el.disabled = true;
           });
