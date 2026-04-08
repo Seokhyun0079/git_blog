@@ -131,6 +131,95 @@
         object-fit: cover;
         transition: transform 0.3s ease;
       }
+
+      .comments-section {
+        margin-top: 2rem;
+        background: var(--card-background);
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .comments-heading {
+        margin: 0 0 1rem 0;
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      .comments-warning {
+        color: #c0392b;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+
+      .comments-list {
+        margin-bottom: 1.5rem;
+      }
+
+      .comment-item {
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+      }
+
+      .comment-item:last-child {
+        border-bottom: none;
+      }
+
+      .comment-meta {
+        font-size: 0.85rem;
+        color: var(--secondary-color);
+        margin-bottom: 0.35rem;
+      }
+
+      .comment-body {
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+
+      .comment-form label {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 0.35rem;
+        color: var(--primary-color);
+      }
+
+      .comment-form input,
+      .comment-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.6rem 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font: inherit;
+        margin-bottom: 1rem;
+      }
+
+      .comment-form textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .comment-form button {
+        background: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 0.65rem 1.25rem;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .comment-form button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .comments-empty {
+        color: var(--secondary-color);
+        font-size: 0.95rem;
+      }
     </style>
   </head>
   <body>
@@ -141,9 +230,100 @@
     </header>
     <div class="container">
       <article id="post-content" class="post"></article>
+      <section id="comments-section" class="comments-section" hidden>
+        <h2 class="comments-heading">Comments</h2>
+        <p id="comments-warning" class="comments-warning" hidden></p>
+        <div id="comments-list" class="comments-list"></div>
+        <p id="comments-empty" class="comments-empty" hidden>
+          No comments yet.
+        </p>
+        <form id="comment-form" class="comment-form" autocomplete="on">
+          <label for="comment-author">Name</label>
+          <input
+            id="comment-author"
+            name="author"
+            type="text"
+            maxlength="80"
+            required
+          />
+          <label for="comment-body">Comment</label>
+          <textarea id="comment-body" name="body" maxlength="4000" required></textarea>
+          <button type="submit" id="comment-submit">Submit</button>
+        </form>
+      </section>
     </div>
     <script src="./utills.js"></script>
     <script>
+      const COMMENT_API_BASE = "".trim().replace(/\/$/, "");
+
+      function postIdForApi(raw) {
+        if (!raw) return null;
+        return raw.replace(/\.json$/i, "").trim();
+      }
+
+      function commentsEndpoint(uuid) {
+        if (!COMMENT_API_BASE || !uuid) return null;
+        return (
+          COMMENT_API_BASE +
+          "/api/posts/" +
+          encodeURIComponent(uuid) +
+          "/comments"
+        );
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      async function loadComments(uuid) {
+        const url = commentsEndpoint(uuid);
+        const section = document.getElementById("comments-section");
+        const warn = document.getElementById("comments-warning");
+        const listEl = document.getElementById("comments-list");
+        const emptyEl = document.getElementById("comments-empty");
+        const form = document.getElementById("comment-form");
+
+        if (!url) {
+          warn.hidden = false;
+          warn.textContent =
+            "Set COMMENT_API_BASE in the editor server .env (public URL of this API), restart the server so templates sync, then rebuild or refresh the blog.";
+          if (form) form.querySelectorAll("input, textarea, button").forEach((el) => {
+            el.disabled = true;
+          });
+          section.hidden = false;
+          return;
+        }
+
+        warn.hidden = true;
+        const res = await fetch(url);
+        const json = await res.json();
+        const items = json.success && Array.isArray(json.data) ? json.data : [];
+        listEl.innerHTML = "";
+        emptyEl.hidden = items.length > 0;
+        items.forEach((c) => {
+          const div = document.createElement("div");
+          div.className = "comment-item";
+          const dateStr = c.createdAt
+            ? new Date(c.createdAt).toLocaleString()
+            : "";
+          div.innerHTML =
+            '<div class="comment-meta">' +
+            escapeHtml(c.author || "") +
+            " · " +
+            escapeHtml(dateStr) +
+            "</div>" +
+            '<div class="comment-body">' +
+            escapeHtml(c.body || "") +
+            "</div>";
+          listEl.appendChild(div);
+        });
+        section.hidden = false;
+      }
+
       async function loadPost() {
         try {
           const urlParams = new URLSearchParams(window.location.search);
@@ -231,6 +411,39 @@
           content.innerHTML = processedContent.replace(/\n/g, "<br>");
           console.log("processedContent", processedContent);
           postContent.appendChild(content);
+
+          const uuid = postIdForApi(postId);
+          await loadComments(uuid);
+
+          const form = document.getElementById("comment-form");
+          const submitBtn = document.getElementById("comment-submit");
+          const postUrl = commentsEndpoint(uuid);
+          if (form && postUrl) {
+            form.onsubmit = async (e) => {
+              e.preventDefault();
+              const author = document.getElementById("comment-author").value;
+              const body = document.getElementById("comment-body").value;
+              submitBtn.disabled = true;
+              try {
+                const r = await fetch(postUrl, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ author, body }),
+                });
+                const out = await r.json();
+                if (!r.ok || !out.success) {
+                  throw new Error(out.error || "Failed to post comment");
+                }
+                document.getElementById("comment-body").value = "";
+                await loadComments(uuid);
+              } catch (err) {
+                console.error(err);
+                alert(err.message || "Failed to submit comment");
+              } finally {
+                submitBtn.disabled = false;
+              }
+            };
+          }
         } catch (error) {
           console.error("Error loading post:", error);
           document.getElementById("post-content").innerHTML = `
