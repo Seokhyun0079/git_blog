@@ -153,6 +153,17 @@
     </style>
   </head>
   <body>
+    <script>
+      (function () {
+        try {
+          var u = new URL(window.location.href);
+          if (u.searchParams.has("time")) {
+            u.searchParams.delete("time");
+            history.replaceState(null, "", u.toString());
+          }
+        } catch (e) {}
+      })();
+    </script>
     <header>
       <div class="container">
         <a href="./" class="back-link">Back to Posts</a>
@@ -188,7 +199,9 @@
             throw new Error("Post ID not found");
           }
 
-          const response = await fetch(`./posts/${postId}?time=${Date.now()}`);
+          const response = await fetch(`./posts/${postId}`, {
+            cache: "no-store",
+          });
           const post = await response.json();
 
           document.title = post.title;
