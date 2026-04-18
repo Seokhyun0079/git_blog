@@ -280,7 +280,7 @@
                 const n = commentsByTitle.has(pageUrl)
                   ? commentsByTitle.get(pageUrl)
                   : 0;
-                commentsLine = `<div class="post-comments" aria-label="Comments">댓글 ${n}</div>`;
+                commentsLine = `<div class="post-comments" aria-label="Number of comments">${n === 1 ? "1 comment" : `${n} comments`}</div>`;
               }
 
               postElement.innerHTML = `
